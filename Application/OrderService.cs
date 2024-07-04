@@ -13,7 +13,7 @@ namespace OrderManagementAPI.Application
 { 
     public class OrderService : IOrderService 
     {
-        private const string RequestProduct = "https://localhost:7000/api/Product/GetProductList";
+        private const string RequestProduct = "http://localhost:5001/api/Product/GetProductList";
         private readonly IOrderDomain _orderDomain; 
         private readonly IMapper _mapper; 
         private readonly ApplicationDbContext _dataContext;
